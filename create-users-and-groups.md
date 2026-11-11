@@ -43,3 +43,15 @@ Find information on a user account:
 - /home/jamie is the home directory of the user. For comparison, on a Windows computer, the home directory would look something like C:\Users\pagaba where pagaba is my own username
 - The final field holds whatever program we wish to automatically run anytime the user logs in. Most of the time, this program will be the user's default shell, for example /bin/bash, or /bin/zsh which is getting more and more popular these days. Truthfully though, it can be just about any program that's executable by the system. - In fact, we can prevent users from being able to login by pointing them to /sbin/nologin.
 
+View groups:
+> groups
+
+View groups of a user:
+> groups <username>
+
+View group details
+> id
+> id <username>
+
+Delete a user:
+> sudo userdel <username>
